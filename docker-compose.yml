@@ -1,0 +1,21 @@
+# ============================================================
+# docker-compose — serviço único 'app' (API + frontend no mesmo processo).
+# Uso:  docker compose up --build   →   http://localhost:8000
+# ============================================================
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    # `.env` é opcional: sem ele o app sobe igual e a chave é colada na tela
+    # Configurações. (required: false evita o erro "env file not found" num clone novo.)
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      # Persiste o arquivo SQLite gerado em runtime fora do container.
+      - ./backend/data:/app/backend/data
+    restart: unless-stopped

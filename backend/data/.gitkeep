@@ -1,0 +1,3 @@
+# Este diretório guarda o arquivo SQLite (app.db), gerado em runtime no
+# primeiro start, e amostras de dados. O .gitkeep mantém a pasta versionada;
+# o .gitignore ignora os arquivos *.db.

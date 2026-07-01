@@ -1,0 +1,21 @@
+# Evita copiar lixo para o contexto de build do Docker.
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+frontend/node_modules/
+frontend/dist/          # o dist é regerado no estágio Node do Dockerfile
+.vite/
+
+.env
+*.db
+backend/data/*.db
+
+.git/
+.gitignore
+.DS_Store
+*.md
+!README.md
+Design System/

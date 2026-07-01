@@ -1,0 +1,40 @@
+# ============================================================
+# .gitignore — IMPORTANTE: frontend/dist NÃO é ignorado de propósito
+# (é o que permite rodar só com Python, sem Node na máquina do avaliador).
+# ============================================================
+
+# Segredos
+.env
+
+# Documento confidencial do case (uso restrito ao processo seletivo — não publicar)
+*.pdf
+
+# Banco SQLite gerado em runtime
+*.db
+*.sqlite
+*.sqlite3
+backend/data/*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node / frontend (mas NÃO o dist)
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+.vite/
+*.tsbuildinfo
+
+# Sistema operacional / editores
+.DS_Store
+.idea/
+.vscode/
+*.swp

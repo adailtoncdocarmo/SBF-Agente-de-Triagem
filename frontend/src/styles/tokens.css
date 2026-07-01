@@ -1,0 +1,134 @@
+/* ============================================================
+   DESIGN TOKENS — Grupo SBF
+   Re-skin do sistema de tokens do Design System/saas_demo_1.html,
+   aplicando a marca SBF (ver Design System/gruposbf/design-system.html):
+   verde-escuro #005E27 como AÇÃO, lime #B5FF20 como REALCE.
+   ============================================================ */
+
+:root {
+  /* Tema claro é o padrão SBF. Declarar o color-scheme é OBRIGATÓRIO: sem ele,
+     os controles nativos (popup do <select>, sugestões do <datalist>, setas do
+     number, scrollbars, autofill) herdam o esquema do SO. Em macOS no modo
+     escuro isso pintava o texto das opções de branco sobre o popup claro —
+     o "menu de seleção em branco". Fixar o esquema casa o nativo com o tema. */
+  color-scheme: light;
+
+  /* --- Superfícies & canvas (white-forward, marca SBF) --- */
+  --canvas: #ECEDE8;
+  --canvas-subtle: #F1F2EE;
+  --surface-1: #F6F7F3;
+  --surface-2: #FBFBF9;
+  --surface-3: #FFFFFF;
+
+  /* --- Texto --- */
+  --text-primary: #0E1311;
+  --text-secondary: #424A46;
+  --text-tertiary: #6E7670;
+  --text-disabled: #A6ADA8;
+  --text-on-acao: #FFFFFF;     /* sobre o verde-escuro */
+  --text-on-realce: #0A2A14;   /* sobre o lime */
+
+  /* --- Bordas --- */
+  --border-subtle: #E0E2DB;
+  --border-default: #D0D3CA;
+  --border-strong: #A6ADA8;
+
+  /* Sombra (RGB para uso com alpha) */
+  --shadow-rgb: 12, 24, 16;
+
+  /* --- AÇÃO (verde-escuro SBF) — botões, links, foco --- */
+  --acao: #005E27;
+  --acao-hover: #00471D;
+  --acao-soft: #E6F2EA;
+
+  /* --- REALCE (lime SBF) — item ativo, destaques --- */
+  --realce: #B5FF20;
+  --realce-strong: #9DE800;
+  --realce-soft: #F0FFD6;
+
+  /* --- Status (recomendações da triagem na Fase 2) --- */
+  --status-success: #1B7A3D;        /* avançar  🟢 (verde da marca) */
+  --status-success-soft: #DCF3E4;
+  --status-warning: #B45309;        /* avaliar  🟡 */
+  --status-warning-soft: #FCEFD3;
+  --status-danger: #C0322B;         /* não avançar  🔴 */
+  --status-danger-soft: #FBE3E1;
+  --status-info: #1F6FB2;
+  --status-info-soft: #DCEDF8;
+
+  /* --- Data viz (gráficos da aba de Métricas, Fase 2) --- */
+  --data-green: #005E27;
+  --data-lime: #9DE800;
+  --data-teal: #14B8A6;
+  --data-blue: #4A9EFF;
+  --data-amber: #F2A93B;
+  --data-purple: #9B7BFF;
+  --data-pink: #EC4899;
+
+  /* --- Espaçamento --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* --- Raio --- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-pill: 999px;
+  --radius-full: 999px;
+
+  /* --- Movimento --- */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Tipografia --- */
+  --font-sans: 'Mona Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Writer', var(--font-sans);
+  --font-mono: 'SF Mono', ui-monospace, 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   DARK MODE — inversão proporcional (tema claro é o padrão SBF)
+   ============================================================ */
+[data-theme="dark"] {
+  color-scheme: dark;       /* controles nativos seguem o tema escuro */
+
+  --canvas: #0C100E;
+  --canvas-subtle: #121714;
+  --surface-1: #161C18;
+  --surface-2: #1D241F;
+  --surface-3: #242C26;
+
+  --text-primary: #F2F4F0;
+  --text-secondary: #B6BDB7;
+  --text-tertiary: #76807A;
+  --text-disabled: #4A524C;
+
+  --border-subtle: #242C26;
+  --border-default: #36403A;
+  --border-strong: #58625B;
+
+  --shadow-rgb: 0, 0, 0;
+
+  --acao: #2EA45A;            /* verde mais claro p/ contraste no escuro */
+  --acao-hover: #38B768;
+  --acao-soft: #0E2A1A;
+
+  --realce-soft: #1E2A0C;
+
+  --status-success-soft: #0C2C18;
+  --status-warning-soft: #2E1E08;
+  --status-danger-soft: #2E120F;
+  --status-info-soft: #0C2233;
+}

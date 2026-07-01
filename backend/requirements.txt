@@ -1,0 +1,43 @@
+# ============================================================
+# Backend — dependências (Fase 1 + Fase 2 já prontas)
+# Todas instaladas já na Fase 1 para a Fase 2 não precisar
+# instalar nada novo. As marcadas (Fase 2) ainda não são usadas.
+# ============================================================
+
+# --- API / servidor ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# --- validação / configuração ---
+# pydantic >=2.11 p/ compatibilidade com google-genai (fallback).
+pydantic>=2.11
+pydantic-settings>=2.7
+python-dotenv==1.0.1
+
+# --- ORM / banco ---
+SQLAlchemy==2.0.36
+
+# --- upload de arquivos (Fase 2 — recebimento de CV) ---
+python-multipart==0.0.20
+
+# --- IA ---
+# Versão atual: habilita `messages.parse()` + output_config (saída estruturada
+# validada com Pydantic) e os modelos atuais (Opus 4.8 / Sonnet 4.6 / Haiku 4.5).
+anthropic==0.112.0
+
+# Provedores de FALLBACK (resiliência): usados só quando a Claude falha/atrasa.
+# Import preguiçoso — o caminho primário não depende deles.
+openai>=1.50
+google-genai>=0.3
+
+# --- leitura de currículo: PDF / DOCX (Fase 2) ---
+pypdf==5.1.0
+pdfplumber==0.11.4
+python-docx==1.1.2
+
+# --- cálculo de métricas / avaliação (Fase 2) ---
+pandas==2.2.3
+
+# --- testes ---
+pytest==8.3.4
+httpx==0.28.1

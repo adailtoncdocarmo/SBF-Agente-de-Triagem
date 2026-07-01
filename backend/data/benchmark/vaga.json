@@ -1,0 +1,27 @@
+{
+  "titulo": "Vendedor(a) de Loja — Operações de Varejo",
+  "descricao": "Vaga para vendedor(a) de loja física de varejo esportivo. Atendimento ao cliente, abordagem e fechamento de vendas, operação de PDV e caixa, organização e reposição de mercadoria, cumprimento de metas. Desejável experiência prévia em varejo. Necessária disponibilidade para trabalhar em turnos, fins de semana e feriados (escala de shopping).",
+  "regua": {
+    "funcao": "operacional",
+    "senioridade": "junior",
+    "criterios": [
+      {"id": "tecnicas", "rotulo": "Competências técnicas essenciais", "peso": 25, "e_critico": true, "piso_senioridade": 2},
+      {"id": "experiencia", "rotulo": "Experiência profissional relevante", "peso": 20, "e_critico": false, "piso_senioridade": 2},
+      {"id": "resultados", "rotulo": "Resultados e impacto", "peso": 8, "e_critico": false, "piso_senioridade": 2},
+      {"id": "complexidade", "rotulo": "Senioridade e complexidade", "peso": 7, "e_critico": false, "piso_senioridade": 2},
+      {"id": "setor", "rotulo": "Aderência ao setor e contexto", "peso": 10, "e_critico": false, "piso_senioridade": 2},
+      {"id": "formacao", "rotulo": "Formação e certificações", "peso": 25, "e_critico": false, "piso_senioridade": 2},
+      {"id": "progressao", "rotulo": "Progressão e coerência de carreira", "peso": 5, "e_critico": false, "piso_senioridade": 2}
+    ],
+    "knockouts": [
+      {"requisito": "Disponibilidade para turnos, fins de semana e feriados", "justificativa_job_related": "Escala de operação de loja em shopping — indispensável desde o dia 1."}
+    ],
+    "volatilidades": [
+      {"competencia": "sistema PDV", "volatilidade": "media"},
+      {"competencia": "atendimento ao cliente", "volatilidade": "baixa"},
+      {"competencia": "vendas", "volatilidade": "baixa"}
+    ],
+    "thresholds": {"percentil_shortlist": 70, "piso_absoluto": 55, "alvo_auto_decisao": 0.65},
+    "congelada": true
+  }
+}

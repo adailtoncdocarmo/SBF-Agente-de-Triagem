@@ -1,0 +1,10 @@
+- **Next.js** — framework React (Pages Router) que faz o SSR/SSG da página; presente via `__NEXT_DATA__`, `_app`, `_buildManifest`, `_ssgManifest` e a pasta `_next`
+- **React / ReactDOM** — biblioteca de UI que hidrata o HTML renderizado no servidor (bundle `framework`)
+- **webpack** — empacotador do Next.js que gera os runtimes `webpack`, `main` e os chunks da página
+- **CSS Modules** — estilização com classes escopadas por componente (ex.: `Header_container__OuOWB`, `Submenu_dropdown__TItF2`)
+- **react-parallax** — efeito de parallax nas imagens de fundo dos destaques (`react-parallax-bgimage`)
+- **Next.js Image** — otimização de imagens responsivas com `srcset` e formatos AVIF/JPG/PNG (`data-nimg`)
+- **Mona Sans** — fonte variável principal da interface, carregada via `@font-face` (`Mona-Sans.woff2`)
+- **Writer** — fonte secundária da interface (`Writer-Regular.woff2`)
+- **Plausible Analytics** — analytics leve e sem cookies, carregado de forma deferida (`script.js`, `data-domain="gruposbf.com.br"`)
+- **Vercel** — plataforma de hospedagem da aplicação (`polar-sbf-2024.vercel.app`)

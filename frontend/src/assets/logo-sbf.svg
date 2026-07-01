@@ -1,0 +1,8 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grupo SBF">
+  <!-- Marca placeholder on-brand: quadrado lime (#B5FF20) + monograma verde-escuro (#005E27).
+       Substituível pelo logo oficial (PNG em Design System/gruposbf/assets/) sem mudar código. -->
+  <rect width="40" height="40" rx="9" fill="#B5FF20"/>
+  <text x="50%" y="51%" dominant-baseline="central" text-anchor="middle"
+        font-family="'Mona Sans', 'Segoe UI', system-ui, sans-serif"
+        font-size="13" font-weight="800" letter-spacing="-0.5" fill="#005E27">SBF</text>
+</svg>

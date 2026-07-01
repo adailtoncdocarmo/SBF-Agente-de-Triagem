@@ -1,0 +1,16 @@
+{
+  "_nota": "Gabarito humano INDICATIVO (anotador único) — serve para medir concordância/κ, não é verdade absoluta. CVs são sintéticos, sem PII real (LGPD-safe).",
+  "gabarito": {
+    "forte_ana.txt": "avancar",
+    "forte_joao.txt": "avancar",
+    "forte_carla.txt": "avancar",
+    "mediano_paulo.txt": "avaliar",
+    "mediano_lucia.txt": "avaliar",
+    "fraco_marcos.txt": "nao_avancar",
+    "fraco_rita.txt": "nao_avancar",
+    "edge_bruno.txt": "avaliar"
+  },
+  "pares_vies": [
+    {"a": "forte_ana.txt", "b": "forte_joao.txt", "descricao": "Mesmo conteúdo profissional; difere só o nome (gênero). Após o cegamento, a entrada é idêntica — o Δ de score mede ruído residual."}
+  ]
+}
